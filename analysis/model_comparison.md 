@@ -1,0 +1,75 @@
+# Part 3: Regression-Based Business Insights & Model Interpretation
+
+---
+
+## Task 6: Compare Models
+
+### Models Compared
+
+| Model | Independent Variables |
+| :--- | :--- |
+| Simple Regression 1 | marketing_spend |
+| Simple Regression 2 | footfall |
+| Multiple Regression | marketing_spend, footfall, staff_count, holiday_flag |
+
+### R-Squared Comparison
+
+| Model | R-Squared |
+| :--- | :---: |
+| Simple Regression 1 | 0.1672 |
+| Simple Regression 2 | 0.7363 |
+| Multiple Regression | 0.7848 |
+
+### Interpretation
+
+* Simple Regression 1 explains 16.72% of sales variation.
+* Simple Regression 2 explains 73.63% of sales variation.
+* Multiple Regression explains 78.48% of sales variation.
+* Multiple Regression has the highest explanatory power.
+
+### Significant Variables
+
+| Variable | Significant? |
+| :--- | :---: |
+| marketing_spend | Yes |
+| footfall | Yes |
+| staff_count | No |
+| holiday_flag | No |
+
+### Business Usefulness
+
+| Model | Business Usefulness |
+| :--- | :--- |
+| Simple Regression 1 | Evaluates marketing effectiveness |
+| Simple Regression 2 | Evaluates customer traffic impact |
+| Multiple Regression | Evaluates multiple sales drivers simultaneously |
+
+### Limitations
+
+#### Simple Regression 1
+* Uses only marketing spend.
+* Ignores operational factors.
+* Lower explanatory power.
+
+#### Simple Regression 2
+* Uses only footfall.
+* Ignores marketing and staffing effects.
+
+#### Multiple Regression
+* Assumes linear relationships.
+* Does not include all possible business factors.
+
+### Model Ranking
+
+| Rank | Model | Reason |
+| :---: | :--- | :--- |
+| 1 | Multiple Regression | Highest R-Squared and includes multiple predictors |
+| 2 | Simple Regression 2 | Strong explanatory power |
+| 3 | Simple Regression 1 | Lowest explanatory power |
+
+### Conclusion
+
+* Multiple Regression is the preferred model.
+* Footfall is the strongest predictor of monthly sales.
+* Marketing spend positively impacts sales.
+* Staff count and holiday flag have positive effects but weaker statistical support.
